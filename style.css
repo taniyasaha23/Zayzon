@@ -1,0 +1,55 @@
+    /* Button Hover Animation */
+    .btn:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    /* Link Hover Underline Animation */
+    a.text-decoration-none {
+        position: relative;
+        display: inline-block;
+        transition: color 0.3s ease;
+    }
+
+    a.text-decoration-none::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #0d6efd; /* Bootstrap primary color */
+        transition: width 0.3s ease;
+    }
+
+    a.text-decoration-none:hover::after {
+        width: 100%;
+    }
+
+    a.text-decoration-none:hover {
+        color: #0d6efd;
+    }
+
+    /* Card Link Hover */
+    .card a:hover {
+        color: #d63384; /* Pink accent */
+        text-decoration: underline;
+    }
+
+    /* Navigation link hover */
+    .navbar a:hover img {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+    }
+
+    /* Panel hover */
+    .panel a:hover {
+        text-decoration: underline;
+        color: #ffc107 !important; /* warning color */
+    }
+
+    /* Smooth zoom for product images */
+    .card img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+    }
